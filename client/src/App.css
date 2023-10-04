@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --font-family: 'Hanken Grotesk', sans-serif;
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  --font-size-xxxxl: clamp(3.81rem, 4.25vw + 2.5rem, 6.25rem);
+  --font-size-xxxxxl: clamp(4.75rem, 5.5vw + 2.83rem, 7.5rem);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: black;
   color: white;
+  font-family: var(--font-family);
+  height: 100vh;
+  padding: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-title {
+  font-size: var(--font-size-xxl);
+  font-weight: 500;
+}
+
+.home-link {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 14px 25px;
+  font-weight: 200;
+  font-size: var(--font-size-md);
+  text-transform: uppercase;
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.home-message {
+  font-size: var(--font-size-xxxxl);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.home-img {
+  width: 25rem;
+  height: 17rem;
+  margin-bottom: 10rem;
 }
